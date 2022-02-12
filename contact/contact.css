@@ -22,6 +22,7 @@ html{
   --background-button: #ECD6C4;
   --sombra-button: rgba(0, 0, 0, 0.25);
   --font-button: #2F2325;
+  --border: #fff2e7;
 }
 .cabecalho{
   display: flex;
@@ -44,7 +45,10 @@ html{
   font-family: 'sarala', sans-serif;
   font-weight: 400;
 }
-
+.menu-item:hover{
+    color: var(--white);
+    transition: 0.5s;
+  }
 .conteudo{
   border-top: 0.1rem solid var(--title);
   margin-bottom: 4.8rem;
@@ -90,10 +94,50 @@ html{
   font-size: 2.4rem;
   color: var(--font-button);
 }
+#conteudo-button:hover{
+  background-color: var(--background);
+  transition: 0.5s;
+}
 #conteudo-imagem{
   height: 43rem;
 }
 body {
   color: var(--title);
   background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.conteudo-secundario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 4.8rem;
+}
+.conteudo-secundario-titulo{
+  font-size: 2.4rem;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  color: var(--title);
+
+  border-top: 0.4px solid var(--border);
+  padding-top: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.conteudo-secundario-paragrafo{
+  font-size: 1.8rem;
+  font-family: 'sarala', sans-serif;
+  font-weight: 300;
+  color: var(--background-button);
+}
+
+.rodape{
+  padding: 3.2rem;
+  border-top: 0.1rem solid var(--title);
+}
+.rodape-imagem{
+  height: 4.8rem;
+  display: block;
+  margin: 0 auto;
+  /*truque para alinhar apenas um elemento no centro*/
 }
